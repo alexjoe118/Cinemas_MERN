@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import { NavBar} from '../components'
-import { MoviesList, MovieInsert, MoviesUpdate} from '../pages'
+import { MoviesList, MovieInsert, MovieUpdate} from '../pages'
 
 
 // import "jquery/dist/jquery.min.js";
@@ -16,7 +16,12 @@ function App() {
       <Routes>
         <Route path="/movies/list" element={<MoviesList/>} />
         <Route path="/movies/create" element={<MovieInsert/>} />
-        <Route path="/movies/update/:id" element={<MoviesUpdate/>} />
+        <Route path="/movies/update/:id" element={<MovieUpdate/>} />
+        {/* <Route
+                    path="/movies/update/:id"
+                    exact
+                    component={MoviesUpdate}
+                /> */}
       </Routes>
     </Router>
   );

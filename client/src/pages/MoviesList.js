@@ -40,7 +40,7 @@ function DeleteMovie({ id }) {
 function UpdateMovie({ id }) {
   const updateUser = (event) => {
     event.preventDefault();
-    window.location.href = `/movie/update/${id}`;
+    window.location.href = `/movies/update/${id}`;
   };
   return (
     <Update
